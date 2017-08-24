@@ -1,0 +1,3 @@
+tmux new-session -d -s "ArchLinux" "fish --login"
+tmux new-window "vim start +q!"
+ 

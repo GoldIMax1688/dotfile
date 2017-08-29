@@ -35,7 +35,22 @@ let g:airline_theme="light"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tmuxline#enabled = 1
 set laststatus=2
+
+let g:tmuxline_preset = {
+      \'a'    : '#(screenfetch -n | grep OS | cut -d m -f 4)',
+      \'b'    : '',
+      \'c'    : '',
+      \'win'  : ['#I','#W'],
+      \'cwin' : ['#I','#W'],
+      \'x'    : '',
+      \'y'    : ['T %R','UT #(uptime | cut -d " " -f 5 | cut -d , -f 1)'],
+      \'z'    : ['#(whoami)','#(uname -n)'],
+      \'options':{
+      \'status-justify' : 'left'
+      \}
+      \}
 
 "let g:Powerline_symbols = 'fancy'
 

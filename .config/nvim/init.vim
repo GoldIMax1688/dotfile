@@ -12,6 +12,7 @@ source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 "set ambiwidth=double
 syntax on
+set relativenumber
 
 set shell=/bin/bash
 

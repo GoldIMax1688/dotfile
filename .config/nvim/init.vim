@@ -27,6 +27,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'airblade/vim-gitgutter'
 Plug 'oplatek/Conque-Shell'
 Plug 'luochen1990/rainbow'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 call plug#end()
 
@@ -67,4 +69,5 @@ au BufWrite *.cpp :Autoformat
 au BufWrite *.cc  :Autoformat
 
 let g:rainbow_active = 1
+
 

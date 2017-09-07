@@ -1,0 +1,11 @@
+[Unit]
+Description=auto pull and push git
+
+[Service]
+Type=forking
+ExecStart=cd; git pull;
+ExecStop=cd; git push;
+
+[Install]
+WantedBy=default.target
+

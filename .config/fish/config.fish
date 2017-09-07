@@ -13,3 +13,4 @@ function cxx
   clang++ --std=c++11 $argv
 end
 
+set DISPLAY :0

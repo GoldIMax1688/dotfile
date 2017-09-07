@@ -3,8 +3,8 @@ Description=auto pull and push git
 
 [Service]
 Type=forking
-ExecStart=cd; git pull;
-ExecStop=cd; git push;
+ExecStart=/bin/bash ~/.gitpull
+ExecStop=/bin/bash ~/.gitpush
 
 [Install]
 WantedBy=default.target

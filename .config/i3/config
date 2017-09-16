@@ -17,6 +17,10 @@ font pango:monospace 8
 
 gaps inner 10
 gaps outer 20
+new_window 1pixel
+bindsym $mod+t border normal
+bindsym $mod+y border 1pixel
+bindsym $mod+u border none
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -36,7 +40,7 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+c kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run

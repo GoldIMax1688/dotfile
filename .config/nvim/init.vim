@@ -46,7 +46,7 @@ let g:promptline_preset = {
 
 let g:tmuxline_preset = {
       \'a'    : '#(screenfetch -n | grep OS | cut -d m -f 4)',
-      \'b'    : 'TODO : #(cat ~/TODO)',
+      \'b'    : '',
       \'c'    : '',
       \'win'  : ['#I','#W'],
       \'cwin' : ['#I','#W'],

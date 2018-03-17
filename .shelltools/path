@@ -1,0 +1,8 @@
+#!/usr/bin/fish
+
+switch (pwd)
+case $HOME
+    echo "~"
+case '*'
+    echo (pwd | sed "s/\//\n/g" | tail -n 1)
+end

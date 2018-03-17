@@ -29,10 +29,12 @@ Plug 'oplatek/Conque-Shell'
 Plug 'luochen1990/rainbow'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-fireplace'
 call plug#end()
 
-let g:airline_theme="minimalist"
+let g:airline_theme="light"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
@@ -41,8 +43,7 @@ set laststatus=2
 
 let g:promptline_theme = 'airline'
 let g:promptline_preset = {
-            \'a' : [ '$USER' ],
-            \'b' : [ promptline#slices#cwd() ] }
+            \'a' : [ '$(~/.shelltools/path)']}
 
 let g:tmuxline_preset = {
       \'a'    : '#(screenfetch -n | grep OS | cut -d m -f 4)',
@@ -60,7 +61,7 @@ let g:tmuxline_preset = {
 
 "let g:Powerline_symbols = 'fancy'
 
-colorscheme Tomorrow-Night
+colorscheme Tomorrow
 
 " Formatter
 noremap <F3> :Autoformat<CR>

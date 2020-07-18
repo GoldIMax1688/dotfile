@@ -61,7 +61,7 @@ let g:tmuxline_preset = {
 
 "let g:Powerline_symbols = 'fancy'
 
-colorscheme Tomorrow
+"colorscheme Tomorrow
 
 " Formatter
 noremap <F3> :Autoformat<CR>
